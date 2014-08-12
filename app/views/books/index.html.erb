@@ -39,7 +39,7 @@
     <div class="span2 book-item">
       <%= image_tag book.picture.thumb %><br>
       <%= link_to book.title, book_path(book.id) %><br>
-      <%= book.price %>
+      $<%= book.price%>
     </div>
   <%end%>
 </div>

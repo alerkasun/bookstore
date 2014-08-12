@@ -5,13 +5,15 @@
 
 .book-item {
   height: 120px;
-  margin: 50px;
+  margin: 40px;
   border-style: groove; /* Стиль рамки вокруг параграфа */
   border-width: 2px 2px 2px 2px; /* Толщина границы */
-  padding: 5px; /* Поля вокруг текста */
+  padding: 1px; /* Поля вокруг текста */
+  text-align: center;
 }
 
 .book-item img {
-  height: 10px;
-  margin: 20px;
+  height: 120px;
+  width: 100px;
+  margin: 1px;
 }

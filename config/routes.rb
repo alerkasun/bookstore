@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   resources :orders
 
+  resources :carts
+
   resources :books
   root :to => "books#index"
 
