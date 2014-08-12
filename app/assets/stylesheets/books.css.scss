@@ -1,3 +1,17 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.book-item {
+  height: 120px;
+  margin: 50px;
+  border-style: groove; /* Стиль рамки вокруг параграфа */
+  border-width: 2px 2px 2px 2px; /* Толщина границы */
+  padding: 5px; /* Поля вокруг текста */
+}
+
+.book-item img {
+  height: 10px;
+  margin: 20px;
+}
