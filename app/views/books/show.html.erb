@@ -3,6 +3,10 @@
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
 </div>
 
+<content>
+<%=Book.last.to_s%>
+</content>
+
 <dl class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
   <dd><%= @book.title %></dd>
@@ -10,8 +14,10 @@
   <dd><%= @book.description %></dd>
   <dt><strong><%= model_class.human_attribute_name(:price) %>:</strong></dt>
   <dd><%= @book.price %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:book_in_stock) %>:</strong></dt>
-  <dd><%= @book.book_in_stock %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:picture) %>:</strong></dt>
+  <dd><%= image_tag @book.picture.thumb %></dd>
+
+
 </dl>
 
 <div class="form-actions">
